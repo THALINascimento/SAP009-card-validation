@@ -12,6 +12,12 @@
     <main class=""menu></main>
     <section class="estilo"></section>
       
+    <div>
+      <input type="text" name="numero">
+      <input type="text" name="nome">
+      <input type="text" name="validade">
+      <input type="text" name="cvv">
+    </div>
     
     <section class="conteudo"></section>
 
@@ -22,9 +28,9 @@
           <input type="text" name="nome" id="nome" placeholder="nome impesso no cartão" >
 
           <label for="numero" maxLength="19" aria-placeholder="0000 0000 0000 0000"></label>
-          <input type="text" name="numero" placeholder="xxxx xxxx xxxx xxxx" >
+          <input type="numero" name="numero" class="numero" id="numero" placeholder="xxxx xxxx xxxx xxxx" onkeypress="return event.charCode <= 57" required>
         
-      
+      <div class="logo" id="logo"><img></div>
       <div class="cod">
    
         <label>validade</label>   
@@ -56,7 +62,7 @@
         <input type="text" nome="codigo" class="codigo" placeholder="cvv" maxlength="3">
       </div>
       <div> <button>ENVIAR</button></div>
-  <div><input type="submit" value="ENVIAR"></div>
+  <div><input type="submit" value="ENVIARimp"></div>
     </form>
   </div>
 
