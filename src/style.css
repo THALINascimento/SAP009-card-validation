@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color:hsl(210, 11%, 15%);
     }
     
 body {
@@ -93,7 +94,7 @@ button{
     width: 80%;
     height: 30%;
     padding: 5px;
-    color: #fff;
+    color: rgb(5, 5, 5);
     cursor: pointer;
     align-self: center;
 }

@@ -12,13 +12,7 @@
     <main class=""menu></main>
     <section class="estilo"></section>
       
-    <div>
-      <input type="text" name="numero">
-      <input type="text" name="nome">
-      <input type="text" name="validade">
-      <input type="text" name="cvv">
-    </div>
-    
+     
     <section class="conteudo"></section>
 
     <section>
@@ -27,10 +21,10 @@
           <label for="nome"></label>
           <input type="text" name="nome" id="nome" placeholder="nome impesso no cartão" >
 
-          <label for="numero" maxLength="19" aria-placeholder="0000 0000 0000 0000"></label>
+          <label for="numero" maxLength="16" aria-placeholder="0000 0000 0000 0000" oninput="validarCartao"></label>
           <input type="numero" name="numero" class="numero" id="numero" placeholder="xxxx xxxx xxxx xxxx" onkeypress="return event.charCode <= 57" required>
         
-      <div class="logo" id="logo"><img></div>
+      
       <div class="cod">
    
         <label>validade</label>   
@@ -61,13 +55,16 @@
 
         <input type="text" nome="codigo" class="codigo" placeholder="cvv" maxlength="3">
       </div>
-      <div> <button>ENVIAR</button></div>
-  <div><input type="submit" value="ENVIARimp"></div>
+      <div> <button id="botao">ENVIAR</button></div>
+      <p class="mensagem"></p>
+  
+      
     </form>
   </div>
 
     </section>
-
+    <input id="cardClone" placeholder="0000 0000 0000 0000" class="clone" disabled />
+    <div class="logo" id="logo"><img></div>
 
 <footer></footer>
     <script src="index.js" type="module"></script>
