@@ -1,62 +1,34 @@
-import validator from './validator.js';
-
+//import validator from './validator.js';
+//console.log (validator)
 
 //manipulação do DOM
 //cons ou variavel pode ser qual que nome para usar no js
-const number = document.querySelector('.numero') //chamar id ou classe do html
+const cardNumber = document.querySelector("#numero")//chamar id ou classe do html
 const button = document.querySelector('#botao')
-const message = document.querySelector ('.mensagem')
+const message = document.getElementById('mensagem')
 
 
-button.addEventListener('click', cardvalidation) 
+button.addEventListener("click", cc)
 //adicionar evento de clique no botão para ouvir a função
-//criar função com as regras de digitaçãoo da cardvalidation
+//criar função com as regras de digitação
 
-function cardvalidation(evento){
-  evento.preventDefault()
-   //não atualizar a página antes de realizar evento de click
-   const valorDigitado = number.value
-   //criar variavel = valor do numero digitado no input
-   const validado = validator.isValid(valorDigitado)
-   //se alguem souber de uma descrição mais clara me fala <3
+//console.log("baby") teste da função click do botão ok
+function cc(){
+ //criar uma função com parametros de validação após preenchimento do form e click no botão 
+let digitadow = cardNumber.value;
+//criei uma variável relativa que recebe o conteudo digitado na constante que recebe o valor do input 
 
-//if tem condição para retorno ou ou if para outra opção
-//else if se if não for verdadeira 
-//else não tem condição
-   if(
-    valorDigitado === '' ||
-    valorDigitado === '0000000000000000' ||
-    valorDigitado === '000000000000000' ||
-    valorDigitado === '00000000000000' ||
-    valorDigitado.length <= 13 
-      ){
-   return (message.innerHTML = 'que saco cartão')
-   }
-
-   else if(validado === true){
-  return (message.innerHTML = 'Parabéns')  
-  }
-
-  else if (validado === false){
-    return (message.innerHTML = 'SPSSERASA')
-
-  }
-    
-
+  
+if (
+  digitadow.length <=13
+  ){
+  console.log(digitadow) //teste de retorno do numero digitado no input 
+} {
+return(message.innerHTML= "Dados inválidos, por favor verifique o cartão e tente novamente! :(")
 }
 
-number.addEventListener('keyup',clone)
-//informações digitadas no formulario do cartão vão ser 
-//impressar na imagem do cartão na tela
-
-function clone(){
-  const value = document.getElementById('numero').value
-  //pegar o que for digitado no input (value)
-  //ou
-  const ocultar = validator.maskify(value)
-  //maskify mascara numeros do cartão
-  const clone = document.getElementById('cardClone').value = ocultar
-  //o valor digitado no numero do cartao vai clonar no input clone e chamar a função
-  //ocultar
-
 }
+//Até aqui tudo funcionando ALELUIA SOCORRO DEUS
+
+//else if(digitadow = ""){
+//return(message.innerHTML= "Por favor, digite o numero do cartão")

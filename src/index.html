@@ -1,72 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>  
-    <h1><p> compre um lindo</p></h1>
-    <p>dhdhdhdhhfhfhfhfhfhgghhghghghghh</p>
-    <main class=""menu></main>
-    <section class="estilo"></section>
-      
-     
-    <section class="conteudo"></section>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Tarjeta de crédito válida</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <header>  
+        <h1>Valide seu cartão</h1>
+        <nav>
+          <ul>
+            <li><a></a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <section>
-      <div class="cartao">
-        <form action class="estilocartao">      
-          <label for="nome"></label>
-          <input type="text" name="nome" id="nome" placeholder="nome impesso no cartão" >
-
-          <label for="numero" maxLength="16" aria-placeholder="0000 0000 0000 0000" oninput="validarCartao"></label>
-          <input type="numero" name="numero" class="numero" id="numero" placeholder="xxxx xxxx xxxx xxxx" onkeypress="return event.charCode <= 57" required>
+      <main class="menu">
+       <section class="estilo"></section>  
+       <section class="conteudo"></section>
+       <section>
+         <div class="cartao">
+          <form action class="estilocartao">      
+            <label for="nome"></label>
+            <input type="text" name="nome" id="nome" placeholder="nome impesso no cartão" >
+            <label for="numero" maxLength="16"></label>
+            <input type="numero" name="numero" class="numero" id="numero" placeholder="xxxx xxxx xxxx xxxx">    
+         <div class="cod">
+          <label>validade</label>   
+              <select name="mes">  
+                <option type="text" name="validade" placeholder="mês" value="ano" selected disabled>mês</option>
+                <option value="ano1">01</option>
+                <option value="ano2">02</option>
+                <option value="ano3">03</option>
+                <option value="ano4">04</option>
+                <option value="ano5">05</option>
+                <option value="ano1">06</option>
+                <option value="ano2">07</option>
+                <option value="ano3">08</option>
+                <option value="ano4">09</option>
+                <option value="ano5">10</option>
+                <option value="ano4">11</option>
+                <option value="ano5">12</option>
+              </select>
         
-      
-      <div class="cod">
-   
-        <label>validade</label>   
-        <select name="mes">  
-          <option type="text" name="validade" placeholder="validade" value="ano" selected>MÊS</option>
-          <option value="ano1">01</option>
-          <option value="ano2">02</option>
-          <option value="ano3">03</option>
-          <option value="ano4">04</option>
-          <option value="ano5">05</option>
-          <option value="ano1">06</option>
-          <option value="ano2">07</option>
-          <option value="ano3">08</option>
-          <option value="ano4">09</option>
-          <option value="ano5">10</option>
-          <option value="ano4">11</option>
-          <option value="ano5">12</option>
-        </select>
+          <select>
+            <option value="ano" placeholder="ano" disabled selected>ano</option>
+            <option value="ano1">23</option>
+            <option value="ano2">24</option>
+            <option value="ano3">25</option>
+            <option value="ano4">26</option>
+            <option value="ano5">27</option>
+          </select>
 
-        <select>
-          <option value="ano" selected>ANO</option>
-          <option value="ano1">23</option>
-          <option value="ano2">24</option>
-          <option value="ano3">25</option>
-          <option value="ano4">26</option>
-          <option value="ano5">27</option>
-        </select>
-
-        <input type="text" nome="codigo" class="codigo" placeholder="cvv" maxlength="3">
-      </div>
-      <div> <button id="botao">ENVIAR</button></div>
-      <p class="mensagem"></p>
-  
-      
-    </form>
-  </div>
-
-    </section>
-    <input id="cardClone" placeholder="0000 0000 0000 0000" class="clone" disabled />
-    <div class="logo" id="logo"><img></div>
-
-<footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
-</html>
+          <input type="text" nome="codigo" class="codigo" placeholder="cvv" maxlength="3">
+         </div>   
+         </form>
+         </div>
+       </section>
+        <div> <button id="botao">ENVIAR</button></div>
+        <p id="mensagem"></p>
+       </main>
+       -<input id="cardClone" placeholder="0000 0000 0000 0000" class="clone" disabled />-->
+    <-<input id="nameClone" placeholder="nome impresso no cartão" class="clone" disabled/>-->
+    !--<input id="mesClone" placeholder="00/" class="clone" disabled/>-->
+  !--<input id="anoClone" placeholder="00" class="clone" disabled/>-->
+  --<input id="cvvClone" placeholder="xxx" class="clone" disabled/>-->
+       <footer>
+        <ul>
+          <li><a href="/meu-perfil-do-google-plus">githubs</a></li>
+        </ul>
+       </footer>
+      <script src="index.js" type="module"></script>
+    </body>
+  </html>
