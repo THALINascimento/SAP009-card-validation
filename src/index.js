@@ -2,31 +2,28 @@ import validator from './validator.js';
 console.log (validator)
 
 //manipulação do DOM
-//cons ou variavel pode ser qual que nome para usar no js
+//c ou v pode ser qual que nome para usar no js
 const cardNumber = document.querySelector("#numero")//chamar id ou classe do html
 const button = document.querySelector('#botao')// crie variavel para acontecer o evento da validação no clique do botão a seguir
 const message = document.getElementById('mensagem') //criei variavel para aparecer o resultado da validação
 
 
-button.addEventListener("click", cc)
+button.addEventListener("click" , cc);
 //adicionar evento de clique no botão para ouvir a função
 //criar função com as regras de digitação
-
-console.log("baby") //teste da função click do botão ok
+//src/index.js: aqui você deve escutar os eventos de DOM, chamar validator.isValid()e validator.maskify().
+console.log("teste") //teste da função click do botão ok
 function cc(){
  //criar uma função com parametros de validação após preenchimento do form e click no botão 
-let digitadow = cardNumber.value;
+let digit = cardNumber.value;
 //criei uma variável relativa que recebe o conteudo digitado na constante que recebe o valor do input 
-
-  
-if (
-  digitadow.length <=13
-  ){
-  console.log(digitadow) //teste de retorno do numero digitado no input 
+if (digit.length <=13){
+  //console.log(digit) //teste de retorno do numero digitado no input 
+}
 } {
 //return(message.innerHTML= "Dados inválidos, por favor verifique o cartão e tente novamente! :(")
 
-}
+//}
 //digitadow.reverse //numero digitado fica invertido
 //retornar valor invertido em um array
 //dobrar numeros na posição impar
@@ -34,7 +31,7 @@ if (
 //somar todos os numeros 
 //mod 10 se resto  0 verdaideiro se não falso
 
-}
+//}
 //Até aqui tudo funcionando ALELUIA SOCORRO DEUS
 
 //else if(digitadow = ""){
@@ -42,7 +39,7 @@ if (
 
 /*addEventListener('input', function() {masknumber())});
 function maskify (masknumber){
-  let numeroCartao = cardNumber.value;
+  let numero =dNumber.value;
   if (cardNumber.length <=16) {
     //como delimitar quantidade valida de caracteres e fazer aceitação de apenas numeros?
     cardNumber.value
