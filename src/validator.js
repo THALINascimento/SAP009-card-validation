@@ -1,82 +1,40 @@
-const validator = {
-//...
-}
+// ALGO LUHN É A ISVALID E A MASK ?
+//function isValid(input [input.length]){
+//A FUNÇÃO DE VALIDAR PEGA O INPUT COMO PARAMENTRO OU A LARGURA DELE ? CHAMA POR GET ELEMENT DE NOVO ?
 
-export default validator;
-
-
-/*//preciso colocar nessa parte o maskify e i isvalid
-
-//para comprimento LEAGTH!!!!!!
-//const num = cardNumber.value;//chamar id ou classe do html também igualo  outro js ?
-//const arrayNum = [] = const num
-
-//isValid(creditCardNumber){ //é um string com o número do cartão a ser verificado.
-//Esta função deve retornar um boolean, dependendo de sua validade, de acordo com o algoritmo de Luhn.*\
+//const inteiro = (document.querySelector("#numero").value); // posso fazer um .velue para já pegar o valor junto com o elemento
 
 
-//para numero item inicial 0 até o comprimento do numero  somando item ++)
-//let = i = arrayNum
-//for (let i=0, i < num.length, i++)
-//let numCard = parseInt(creditCardNumber[i])//parseint converte argumento em string e retorna inteiro o u NAN
-//arrayNum.push()//adiciona elementos no final do array atualizando modificação do comprimento.
-//}
-//const invertido = arrayNum.reverse() //para inverter o conteudo do array
-//for (let i=0, i < invertido.length, i++){
-//if((i + 1) % 2 === 0){
-//    invertido[i] = invertido[i] * 2
-//}
-//if (invertido[i]) {
-    //} else {
+export function isValid(creditCardNumber){
+  const invert = creditCardNumber.split("").reverse(); //numeros digitados invertidos tem outro jeito?; criar var arr () = invert const cardArray = []; //como colocar no arr para manipular posições ? 
+  // = >= 48 && <= 57 //a identificação no Js dos  caracteres são numeros para aceitar somente numeros[0-9] usar padrão patern ?
+for (let i = 0; i < invert.length; i++){ 
+  if (i % 2 === 0) {
+    let multiplica = invert[i] * 2;
+ }
+if (result % 10 == 0){
+  return true
+  
+  }else{
+  return false
+  }
+
+
+  //?????
+/*exportar function cc (){
+  f//sempre essa formula PARA VALIDAR ?
+    //LEMBRAR ONDE ANOTEI O CODIGO PARA SÓ ACEITAR NUMEROS PODE SER QUE DENTRO DA FUNÇÃO FUNCIONE (REDUNDANCIA THALITA)
+    // = >= 48 && <= 57 //a identificação no Js dos  caracteres são numeros para aceitar somente numeros[0-9] usar padrão patern ?
     
-//}
-//}
-//}
-
-
-
-
-
-
-//validator.maskify(creditCardNumber): //é um string com o número do cartão e esta função 
-//deve retornar um stringonde todos, exceto os últimos quatro caracteres, são substituídos por um número
-//( #) ou gato. Essa função deve sempre manter os quatro últimos caracteres intactos, mesmo quando o
-//stringfor mais curto.
-
-
-
-
-
-
-
-
-
-Em resumo, os critérios mínimos de aceitação do projeto para considerar o Feedback do Projeto:
-
-Possui uma interface que permite ao usuário validar o número de um cartão de crédito 
-ocultar todos os dígitos de um cartão e ocultar o número até os 4 últimos dígitos.
-O projeto será entregue incluindo testes unitários dos métodos validator( isValide maskify).
-
-src/validator.js: aqui você deve implementar o objeto validator, o qual já está exportado no clichê .
-Este objeto ( validator) deve conter dois métodos:
-
-validator.isValid(creditCardNumber): creditCardNumberé um string com o número do cartão a ser verificado.
-Esta função deve retornar um boolean, dependendo de sua validade, de acordo com o algoritmo de Luhn .
-
-
-validator.maskify(creditCardNumber): creditCardNumber é um string com o número do cartão e esta função 
-deve retornar um stringonde todos, exceto os últimos quatro caracteres, são substituídos por um número
- ( #) ou gato. Essa função deve sempre manter os quatro últimos caracteres intactos, mesmo quando o
- stringfor mais curto.
-
-Exemplo de uso:
-
-maskify('4556364607935616') === '############5616'npm init @eslint/config
-maskify(     '64607935616') ===      '#######5616'
-maskify(               '1') ===                '1'
-maskify(               '')  ===                ''
-
-
-test/validator.spec.js: este arquivo contém alguns testes de exemplo e aqui você deve implementar os
-testes para validator.isValid()e validator.maskify().*/
+      //se o item na posição for par, DOBRA/
+      console.log("posicoes[i]" ou item ou é o conteudo[i])
+      //const multiplica = invert[i] * 2;
+      //console.log(multiplica)
+  
+    } else { ((multiplica[i] quando for >= 10) subritai para ficar com 1 digito só -9 e depois somar ou ja soma automatico?) {
+      //SE O RESULTADO FOR MAIOR QUE 9 OU = OU MAIRO 10 , SUBRITAIA 9 ?
+      multiplica[i] = multiplica[i] - 9;
+      }
+    }
+  //VARIAVEL MULTIPLICAR + VARIAVEL SOMA OU + POSICOES IMPARES , ? DEVE DAR PRA FAZER UMA SÓ ai o returne fica fora da função para fazer tudo ?
 
