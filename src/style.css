@@ -2,27 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color:hsl(210, 11%, 15%);
+    color:hsl(210, 11%, 15%)  hsl(290, 100%, 29%)  hsl(273, 26%, 49%)  hsl(271, 11%, 63%);;;
     }
     
 body {
-    --primary-color: hsl(290, 100%, 29%);
-    --headline: hsl(210, 11%, 15%);
-    --paragraph: hsl(210, 9%, 31%);
-    
-    --brand-light: hsl(252, 15%, 94%);
-    --brand-light-purple: hsl(273, 17%, 87%);
-    --bg-light: hsl(180, 14%, 97%);
-    
-    --nav-height: 7.2rem;
-    
-    --bg-dark: hsl(225, 5%, 17%);
-    --headline-dark-mode: hsl(273, 26%, 49%);
-    --paragraph-dark-mode: hsl(0, 2%, 90%);
-    --brand-dark: hsl(251, 17%, 68%);
-    --brand-dark-purple: hsl(271, 11%, 63%);
-}
-{
     font-family: sans-serif;
     margin: 0;
     padding:0;

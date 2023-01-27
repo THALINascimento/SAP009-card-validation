@@ -1,78 +1,109 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Tarjeta de crédito válida</title>
-      <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-      <header>  
-        <h1>Valide seu cartão</h1>
-        <nav>
-          <ul>
-            <li><a></a></li>
-          </ul>
-        </nav>
-      </header>
+<html>
 
-      <main class="menu">
-       <section class="estilo"></section>  
-       <section class="conteudo">
-        <div><!--<input id="cardClone" placeholder="0000 0000 0000 0000" class="clone" disabled />-->
-          <!--<input id="nameClone" placeholder="nome impresso no cartão" class="clone" disabled/>-->
-          <!--<input id="mesClone" placeholder="00/" class="clone" disabled/>-->
-          <!--<input id="anoClone" placeholder="00" class="clone" disabled/>-->
-          <!--<input id="cvvClone" placeholder="nome impresso no cartão" class="clone" disabled/>--></div>
-      
-       </section>
-       <section>
-         <div class="cartao">
-          <form action class="estilocartao">      
-            <label for="nome"></label>
-            <input type="text" name="nome" id="nome" placeholder="nome impesso no cartão" >
-            <label for="numero" maxLength="16"></label>
-            <input type="numero" name="numero" class="numero" id="numero" placeholder="xxxx xxxx xxxx xxxx">    
-         <div class="cod">
-          <label>validade</label>   
-              <select name="mes">  
-                <option type="text" name="validade" placeholder="mês" value="ano" selected disabled>mês</option>
-                <option value="ano1">01</option>
-                <option value="ano2">02</option>
-                <option value="ano3">03</option>
-                <option value="ano4">04</option>
-                <option value="ano5">05</option>
-                <option value="ano1">06</option>
-                <option value="ano2">07</option>
-                <option value="ano3">08</option>
-                <option value="ano4">09</option>
-                <option value="ano5">10</option>
-                <option value="ano4">11</option>
-                <option value="ano5">12</option>
-              </select>
-        
-          <select>
-            <option value="ano" placeholder="ano" disabled selected>ano</option>
-            <option value="ano1">23</option>
-            <option value="ano2">24</option>
-            <option value="ano3">25</option>
-            <option value="ano4">26</option>
-            <option value="ano5">27</option>
-          </select>
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-          <input type="text" nome="codigo" class="codigo" placeholder="cvv" maxlength="3">
-         </div>   
-         </form>
-         </div>
-       </section>
-        <div> <button id="botao">ENVIAR</button></div>
-        <p id="mensagem"></p>
-       </main>
-    
-       <footer>
-        <ul>
-          <li><a href="/meu-perfil-do-google-plus">githubs</a></li>
-        </ul>
-       </footer>
-      <script src="index.js" type="module"></script>
-    </body>
-  </html>
+<body>
+  <header>
+    <h1>Valide seu cartão</h1>
+    <nav>
+      <ul>
+        <li><a></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="menu">
+    <section class="container">
+      <div class="bolhas">
+        <span style="--i:11"></span>
+        <span style="--i:3"></span>
+        <span style="--i:11"></span>
+        <span style="--i:21"></span>
+        <span style="--i:11"></span>
+        <span style="--i:31"></span>
+        <span style="--i:29"></span>
+        <span style="--i:2"></span>
+        <span style="--i:11"></span>
+        <span style="--i:13"></span>
+        <span style="--i:3"></span>
+        <span style="--i:21"></span>
+        <span style="--i:12"></span>
+        <span style="--i:8"></span>
+        <span style="--i:4"></span>
+        <span style="--i:11"></span>
+        <span style="--i:19"></span>
+        <span style="--i:31"></span>
+        <span style="--i:11"></span>
+        <span style="--i:5"></span>
+        <span style="--i:13"></span>
+        <span style="--i:7"></span>
+        <span style="--i:16"></span>
+        <span style="--i:21"></span>
+      </div>
+    </section>
+    <section class="conteudo">
+      <div><!--<input id="cardClone" placeholder="0000 0000 0000 0000" class="clone" disabled />-->
+        <!--<input id="nameClone" placeholder="nome impresso no cartão" class="clone" disabled/>-->
+        <!--<input id="mesClone" placeholder="00/" class="clone" disabled/>-->
+        <!--<input id="anoClone" placeholder="00" class="clone" disabled/>-->
+        <!--<input id="cvvClone" placeholder="nome impresso no cartão" class="clone" disabled/>-->
+      </div>
+
+    </section>
+    <section>
+      <div class="cartao">
+        <form action class="estilocartao">
+          <label for="nome"></label>
+          <input type="text" name="nome" id="nome" placeholder="nome impesso no cartão">
+          <label for="numero" maxLength="16"></label>
+          <input type="numero" name="numero" class="numero" id="numero" placeholder="xxxx xxxx xxxx xxxx">
+          <div class="cod">
+            <label>validade</label>
+            <select name="mes">
+              <option type="text" name="validade" placeholder="mês" value="ano" selected disabled>mês</option>
+              <option value="ano1">01</option>
+              <option value="ano2">02</option>
+              <option value="ano3">03</option>
+              <option value="ano4">04</option>
+              <option value="ano5">05</option>
+              <option value="ano1">06</option>
+              <option value="ano2">07</option>
+              <option value="ano3">08</option>
+              <option value="ano4">09</option>
+              <option value="ano5">10</option>
+              <option value="ano4">11</option>
+              <option value="ano5">12</option>
+            </select>
+
+            <select>
+              <option value="ano" placeholder="ano" disabled selected>ano</option>
+              <option value="ano1">23</option>
+              <option value="ano2">24</option>
+              <option value="ano3">25</option>
+              <option value="ano4">26</option>
+              <option value="ano5">27</option>
+            </select>
+
+            <input type="text" nome="codigo" class="codigo" placeholder="cvv" maxlength="3">
+          </div>
+        </form>
+      </div>
+    </section>
+    <div> <button id="botao">ENVIAR</button></div>
+    <p id="mensagem"></p>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="/meu-perfil-do-google-plus">githubs</a></li>
+    </ul>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
