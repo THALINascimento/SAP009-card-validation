@@ -1,88 +1,75 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color:hsl(210, 11%, 15%)  hsl(290, 100%, 29%)  hsl(273, 26%, 49%)  hsl(271, 11%, 63%);;;
-    }
-    
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: hsl(210, 11%, 15%) hsl(290, 100%, 29%) hsl(273, 26%, 49%)
+    hsl(271, 11%, 63%);
+}
+
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    }
-
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #a25fd9;
-    pagging: 1rem;
-    text-align:center;
-    font-family:Open Sans,sans-serif;
-    background-color:#8A71C9;
-    color:#ffffff;
-    margin:Opx 0px 20px 0px
-
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
 }
 
-
-position: relative;
-width: 65%;
-height: 35%;
-text-align: center;
-border-radius: 20px;
-margin-top: 60%;
-background-image: linear-gradient(to top, #black 0%, #yellow 100%);
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  font-family: Open Sans, sans-serif;
+  background-color: #8a71c9;
+  color: #ffffff;
+  margin: Opx 0px 10px 0px;
 }
 
+.cod {
+  display: flex;
+}
 
 .cartao {
-    border: 10px solid ;
-    background: rgb(188, 188, 14);
-    border-radius: 30px;
-    width: 600px;
-    height: 200px;
-    margin: auto;
-    position: relative;
+  border: 10px solid;
+  /*background: rgb(188, 188, 14);*/
+  border-radius: 30px;
+  width: 400px;
+  height: 180px;
+  margin: auto;
+  position: relative;
 }
 
-form{
-    display: flexbox;
-    flex-direction: relative;
-    width: 90%;
-    gap: 2%;
-    align-items: justify;
-    margin-top: 50%;
-    position: relative;
-    height: 40%;
-    margin: 0 auto;
+form {
+  background: #a25fd9;
+  display: flexbox;
+  flex-direction: relative;
+  width: 90%;
+  gap: 2%;
+  align-items: justify;
+  margin-top: 80%;
+  position: relative;
+  height: 40%;
+  margin: 0 auto;
 }
 
-form input{
-    width: 100%;
-    padding: 10px;
-    height: 30%;
-    border: 1px solid #c8c7cf;
-    border-radius: 16px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-
+form input {
+  width: 90%;
+  padding: 10px;
+  height: 30%;
+  border: 1px solid #c8c7cf;
+  border-radius: 16px;
+  padding-left: 10px;
+  margin-bottom: 13px;
 }
-
-button{
-    border-radius: 5px;
-    width: 80%;
-    height: 30%;
-    padding: 5px;
-    color: rgb(5, 5, 5);
-    cursor: pointer;
-    align-self: center;
+*/ button {
+  border-radius: 5px;
+  width: 80%;
+  height: 40%;
+  padding: 10px;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+  align-self: center;
 }
-
-
-
-
-

@@ -1,10 +1,10 @@
-import { isValid } from "./validator";
+import { isValid } from "./validator.js";
 
 function validar() {
-  const card = document.getElementById("numero");
+  const card = document.getElementById("numero").value;
   const validCard = isValid(card); //linka o resutado do input com a função
   const result = document.getElementById("botao");
-  //const maskfy
+  const maskfy = card;
 
   if (card === true) {
     result.innerHTML = "Cartão válido!";
@@ -13,4 +13,4 @@ function validar() {
   }
 }
 
-const botao = addEventListener(click, "botao");
+const botao = addEventListener("click");
