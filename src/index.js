@@ -1,21 +1,28 @@
-import isValid from "./validator.js";
+import validator from "./validator.js";
 
-function validar() {
+/* capturar valor do cartão digitado, vaidar ou invalidar, retornar*/
+
+function cc () {
   const card = document.getElementById("numero").value;
-  //const validCard = isValid(card); //linka o resutado do input com a função
-  const result = document.getElementById("botao");
-  const maskify = document.getElementById("numero").value;
-  maskify.addEventListener("input", maskify);
-  const validade = document.querySelector(".cod");
+  const result = validator.isValid(card);
+  const maskify = validator.maskify(maskify); //maskifyCard.addEventListener("input", maskifyCard);
   const botao = document.getElementById("botao");
-  botao.addEventListener("click", isValid);
+  botao.addEventListener("click" , cc);
+  const mensagem = document.getElementById("menssagem");
 
-  if (card === true) {
-    result.innerHTML = "Cartão válido!";
+  if (card === "") {
+    return (mensagem.innerHTML = "Digite os dados do cartão!");
+  }
+  if (card.length <= 13) {
+    return (mensagem.innerHTML =
+      "Verifique o numero do cartão e tente novamente!");
+  }
+  if (result === true) {
+    return (mensagem.innerHTML = "Cartão válido!");
   } else {
-    result.innerHTML = "Cartão inválido";
+    return (mensagem.innerHTML = "Cartão inválido");
   }
 }
+}
+console.log(validator , cc);
 
-validator.isValid(card);
-validator.maskify(maskify);
