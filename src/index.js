@@ -1,28 +1,25 @@
 import validator from "./validator.js";
 
-/* capturar valor do cartão digitado, vaidar ou invalidar, retornar*/
+const botao = document.getElementById("botao");
+botao.addEventListener("click", cardValidator);
 
-function cc () {
-  const card = document.getElementById("numero").value;
-  const result = validator.isValid(card);
-  const maskify = validator.maskify(maskify); //maskifyCard.addEventListener("input", maskifyCard);
-  const botao = document.getElementById("botao");
-  botao.addEventListener("click" , cc);
-  const mensagem = document.getElementById("menssagem");
+const msg = document.getElementById("mensagem"); //quando clicar no botao vai retornar mensagem de acordo com o que foi inserido
 
-  if (card === "") {
-    return (mensagem.innerHTML = "Digite os dados do cartão!");
-  }
-  if (card.length <= 13) {
-    return (mensagem.innerHTML =
-      "Verifique o numero do cartão e tente novamente!");
-  }
-  if (result === true) {
-    return (mensagem.innerHTML = "Cartão válido!");
+function cardValidator() {
+  const recebeNum = document.getElementById("numero").value; // o que for digitado
+  const result = validator.isValid(recebeNum); // o numero digitado passa pelo luhn
+  //const mask = validator.maskify(recebeNum); //mascara o numero digato
+
+  if (recebeNum === "") {
+    return (msg.innerHTML = "Digite os dados do cartão");
+  } else if (result === true) {
+    return (msg.innerHTML = "Cartão + maskify válido! ");
+  } else if (recebeNum.length < 10) {
+    return (msg.innerHTML = "Verifique o cartão e tente novamente");
   } else {
-    return (mensagem.innerHTML = "Cartão inválido");
+    return (msg.innerHTML =
+      "Cartão inválido! Revise os dados e tente novamente.");
   }
 }
-}
-console.log(validator , cc);
 
+console.log(validator);
