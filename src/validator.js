@@ -1,21 +1,30 @@
 const validator = {
-  isValid(recebeNum) {
+  isValid: function isValid(recebeNum) {
     //armazenar numeros digitados
-    const invert = recebeNum.split("").reverse();
+    const numeroCartao = recebeNum.split("").map(Number);
+    const invert = numeroCartao.reverse();
+    //console.log(invert);
 
+    let result = 0;
     for (let i = 0; i < invert.length; i++) {
       //console.log("", i, invert[i]);
+
       if ((i + 1) % 2 === 0) {
         //(i % 2 === 0) { //posso fazer  i &&
-        invert[i] = invert[i] * 2; //const multip = invert[i] * 2;
-        if (invert[i] > 9) {
-          invert[i] = invert[i] - 9; //soma = soma + (multip - 9);
+        const multip = invert[i] * 2;
+        console.log(multip);
+
+        if (multip > 10) {
+          result += multip; //;
+          console.log(subtrai);
+        } else if (multip <= 10) {
+          result += multip - 9;
+        } else {
+          result += parseInt(numeroCartao[i]);
         }
+        console.log("FINal");
       }
-      let result = 0;
-      for (let i = 0; i < invert.length; i++) {
-        result = result + invert[i];
-      }
+
       if (result % 10 === 0) {
         return true;
       } else {
@@ -23,7 +32,9 @@ const validator = {
       }
     }
   },
+  //maskify: function maskify(recebeNum){
+
+  //}
 };
 
-//maskify(recebeNum)
 export default validator;
