@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>Tarjeta de crédito válida</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="./index.js" type="module"></script>
 </head>
 
 <body>
@@ -28,8 +27,8 @@
           <form action class="estilocartao">
             <label for="nome"></label>
             <input type="text" name="nome" id="nome" placeholder="nome impesso no cartão">
-            <label for="numero" maxLength="16"></label>
-            <input type="text" name="numero" class="numero" maxLength="16" pattern="[0-9]+" autocomplete="off" onkeypress="return event.charCode >= 48 && event.charCode <= 57" id="numero" placeholder="xxxx xxxx xxxx xxxx">
+            <label for="numero" maxlength="16"></label>
+            <input type="text" name="numero" class="numero" maxlength="16" pattern="[0-9]+" autocomplete="off" onkeypress="return event.charCode >= 48 && event.charCode <= 57" id="numero" placeholder="xxxx xxxx xxxx xxxx">
             <div class="cod">
               <label>validade</label>
               <select name="mes">
