@@ -14,7 +14,7 @@ function cardValidator() {
   } else if (recebeNum.length < 10) {
     return (msg.innerHTML = "Verifique o cartão e tente novamente");
   } else if (result === true) {
-    return (msg.innerHTML = "Cartão + maskify válido!" + maskNum);
+    return (msg.innerHTML = "Cartão" + maskNum + "válido!");
   } else {
     return (msg.innerHTML =
       "Cartão inválido! Revise os dados e tente novamente.");

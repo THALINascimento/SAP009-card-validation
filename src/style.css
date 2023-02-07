@@ -1,93 +1,168 @@
-/* {
-  padding: 0;
-  margin: 0;
+* {
   box-sizing: border-box;
-  color: hsl(210, 11%, 15%) hsl(290, 100%, 29%) hsl(273, 26%, 49%)
-    hsl(271, 11%, 63%);
-}*/
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
 
 body {
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(104, 103, 103);
+}
+
+.links {
+  margin: 2% 0 0 50%;
+  cursor: pointer;
+  color: #e0921d;
+  font-size: 120%;
+}
+
+.links {
+  margin-right: 5%;
+  font-weight: 600;
+}
+
+.links {
+  opacity: 0.9;
+}
+.btn {
+  background-color: rgb(207, 187, 56);
   width: 100%;
-  height: 100vh;
-  margin-top: 150px;
-  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(169, 166, 160);
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s linear;
+  break-before: 5px;
+  color: rgb(44, 44, 44);
+}
+
+.btn:hover {
+  letter-spacing: 7px;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.parabens {
+  display: inline-block;
+  margin-top: 5%;
+  width: 50%;
+}
+
+.imgCard {
+  width: 50%;
+  height: 60%;
+  position: relative;
+  margin-left: 10%;
 }
 
 .container {
-  font-weight: bold;
-  color: blueviolet;
-  margin: auto;
-  padding: 20px;
-}
-
-.desenho {
-  background-color: #a25fd9;
-  border-radius: 10px;
-  width: 400px;
-  text-align: center;
-  border: hsl(273, 26%, 49%);
-  margin: auto;
-}
-
-form {
-  display: block;
-  background: #a25fd9;
-  display: flexbox;
-  flex-direction: relative;
-  width: 90%;
-  gap: 2%;
-  align-items: justify;
-  margin-top: 80%;
-  position: relative;
-  height: 40%;
-  margin: 0 auto;
-}
-
-form input {
-  width: 90%;
-  padding: 10px;
-  height: 30%;
-  border: 1px solid #c8c7cf;
-  border-radius: 16px;
-  padding-left: 10px;
-  margin-bottom: 13px;
-}
-
-div input {
-  margin: 5px;
-  padding: 5px;
-}
-
-/**/
-*/ button {
-  border-radius: 5px;
-  width: 80%;
-  height: 40%;
-  padding: 10px;
-  color: rgb(5, 5, 5);
-  cursor: pointer;
-  align-self: center;
-  hover: ;
-}
-
-.cod {
+  min-height: 100vh;
+  background: rgb(104, 103, 103);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-bottom: 5px;
 }
 
+.container form {
+  background: rgba(249, 248, 246, 0.738);
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgb(207, 187, 56);
+  padding: 5px;
+  width: 500px;
+  padding-top: 160px;
+  display: inline-block;
+  flex-direction: column;
+}
 
+.container form .inputBox {
+  margin-top: 20px;
+}
+.container form .inputBox span {
+  display: block;
+  padding-bottom: 10px;
+  margin: 0;
+}
 
-/*
-padding: 0;
-box-sizing: border-box;
-text-transform: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 1rem;
+.container form .inputBox input,
+.container form .inputBox select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #444;
+}
 
-font-family: Open Sans, sans-serif;
-background-color: #8a71c9;
-color: #ffffff;
-margin: Opx 0px 10px 0px;
+.container form .flexbox {
+  gap: 15px;
+  padding: 10px;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.container form .flexbox .inputBox {
+  flex: 1 1 150px;
+}
+
+.container .card-container {
+  margin-bottom: -150px;
+  position: relative;
+  height: 250px;
+  width: 400px;
+}
+
+.container .card-container .front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, yellow, rgb(216, 125, 20));
+  border-radius: 5px;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.container .card-container .front .image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.container .card-container .front .card-number-box {
+  height: 50px;
+  padding: 30px;
+  font-size: 22px;
+  color: rgb(235, 175, 71);
+}
+
+.lab {
+  height: 20px;
+  border-radius: 8px 8px;
+}
+
+.social {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px 10px;
+  position: relative;
+  float: right;
+}
+
+footer {
+  display: inline-block;
+  width: 60%;
+  margin: -10%;
+}
