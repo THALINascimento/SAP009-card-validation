@@ -58,7 +58,10 @@ Criada tela de interação experiência e interface.
 **2. Uma interface que deve permitir ao usuário saber que o cartão foi validado com sucesso, onde visualiza também os númeos mascarados:**
 ![valido](https://user-images.githubusercontent.com/114299360/217397407-477c769e-ca64-4078-8b99-ca69fe682c47.jpeg)
 
-**3. Testes unitários dos métodos.**
+**3. Instalações Testes unitários dos métodos.**
+**Git/Github**
+**Node.js** [Node.js](https://nodejs.org/en/)
+<img  height="40" widtht="40" style="border-radius:5px;" src="https://user-images.githubusercontent.com/114299360/217401219-69d656d5-0718-442b-a71e-700930e356a4.jpg">
 
 ## 4. 🚧 Implementações futuras 🚧
 
@@ -79,16 +82,11 @@ Se você escrever um novo método para isso, terá que fazer testes de unidade.
 
 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
 
-**Git/Github**
-**Node.js** [Node.js](https://nodejs.org/en/)
-
-<img  height="40" widtht="40" style="border-radius:5px;" src="https://user-images.githubusercontent.com/114299360/217401219-69d656d5-0718-442b-a71e-700930e356a4.jpg">
-
 ## 6. Contato
 
-<a href="https://www.linkedin.com/in/erika-soares-dos-santos-54674b178/" target="_blank"><img src=">
+<a href="https://www.linkedin.com/in/thalita-nascimento-3b087a98/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
 
-</a><a href = "mailto:erikasoares1209@gmail.com" target="_blank"><img src="">
+</a><a href = "mailto:thalita.secre@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
 
 ## 7. Criadora/desenvolvedora 💛
 
