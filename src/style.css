@@ -52,26 +52,32 @@ body {
 }
 
 .parabens {
-  display: inline-block;
-  margin-top: 5%;
+  display: flex;
+  margin: 1%;
   width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-bottom: 1px;
+  color: #0c0803;
 }
 
 .imgCard {
   width: 50%;
   height: 60%;
   position: relative;
-  margin-left: 10%;
+  margin: 10%;
 }
 
 .container {
-  min-height: 100vh;
+  min-height: 80vh;
   background: rgb(104, 103, 103);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
+  margin: 3px;
 }
 
 .container form {
@@ -138,7 +144,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 14px;
 }
 
 .container .card-container .front .card-number-box {
@@ -163,6 +169,10 @@ body {
 
 footer {
   display: inline-block;
-  width: 60%;
-  margin: -10%;
+  width: 25%;
+  margin-top: 1%;
+}
+
+p {
+  font-style: italic;
 }
