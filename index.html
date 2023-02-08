@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Validador de cartão</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="'icon" type="img/">
+</head>
+
+<body>
+  <header>
+    <!--<div class="links">
+      <a class="link">catálogo</a>
+      <a class="link">lista de desejos</a>
+      <a class="link">Sobre nós</a>
+    </div>-->
+  </header>
+  <div class="parabens">
+    <section class="">
+      <span></span>
+      <h2>PARABÉNS pela compra!</h2>
+      <br>
+      <p>Para finalizar confirme os dados abaixo:
+      </p>
+
+    </section>
+    <main class="menu">
+    </main>
+  </div>
+
+  <div class="container">
+    <div class="card-container">
+      <div class="chip">
+        <img id="chip">
+        <img class="imgCard" src="img/2.jpeg" id="logo" alt="logo">
+        <div class="front">
+          <div class="card-number-box">
+          </div>
+          <div class="flexbox">
+            <div class="box">
+              <span>nome impesso no cartão</span>
+              <div class="card-holder-name"> número do cartão </div>
+            </div>
+            <div class="box">
+              <span>validade</span>
+              <div class="expiration"><span class="exp-year">xx/xx</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div class="card">
+      <div class="chip" id="card-chip"><img src="./chip.svg" alt="chip" /></div>
+      <input class="card-clone" id="card-number" placeholder="0000 0000 0000 0000" disabled>
+      <div class="test">
+        <input class="card-clone" id="card-expiry" placeholder="MM/AA" disabled>
+        <input class="card-clone" id="card-cvv" placeholder="***" disabled>
+      </div>
+      <input class="card-clone" id="card-name" placeholder="" disabled>
+    </div>-->
+
+    <form action="" class="estilocartao" id="form">
+      <!--<section class="desenho " container-right">-->
+      <div class="inputBox">
+        <span></span>
+        <label for="nome"></label>
+        <input type="text" class="card-number-input" name="nome" id="nome" autocomplete="off" placeholder="digite seu nome">
+        <div class="inputBox">
+          <span></span>
+          <label for="numero" maxlength="16">
+          </label>
+          <input type="text" name="numero" id="numero" class="numero" maxlength="16" pattern="[0-9]+" autocomplete="off" onkeypress="return event.charCode >= 48 && event.charCode <= 57" value="" placeholder="xxxx xxxx xxxx xxxx">
+        </div>
+        <div class="flexbox" id="cod">
+          <div class="inputBox">
+            <span></span>
+            <!--<label for="expiry">Data de validade:</label><br>
+            <input type="text" id="expiry" maxlength="5" pattern="[0,9]" autocomplete="off" placeholder="mm/aa"><br>
+            <label for="cvv">CVV:</label><br>-->
+            <label>validade</label>
+            <select name="mes" id="mes" class="month-input">
+              <option value="mês" selected disabled placeholder="mês">mês</option>
+              <option value="ano1">01</option>
+              <option value="ano2">02</option>
+              <option value="ano3">03</option>
+              <option value="ano4">04</option>
+              <option value="ano5">05</option>
+              <option value="ano1">06</option>
+              <option value="ano2">07</option>
+              <option value="ano3">08</option>
+              <option value="ano4">09</option>
+              <option value="ano5">10</option>
+              <option value="ano4">11</option>
+              <option value="ano5">12</option>
+            </select>
+            <select>
+              <option value="ano" placeholder="ano" disabled selected>ano</option>
+              <option value="ano1">23</option>
+              <option value="ano2">24</option>
+              <option value="ano3">25</option>
+              <option value="ano4">26</option>
+              <option value="ano5">27</option>
+            </select>
+
+            <input type="text" nome="codigo" class="codigo" placeholder="cvv" maxlength="3">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <input type="submit" id="botao" class="btn" value="validar">
+    <br>
+    <p id="mensagem"></p>
+  </div>
+  <footer>
+    <div>
+
+      <a> <img id="lab" class="lab" src="img/lab2.jpeg">
+        <p>desenvolvido por: Thalita Nascimento parceria laboratória</p>
+      </a>
+      <a href="/meu-perfil-"></a>
+      <a> <img id="gitube" class="social" src="img/github.jpeg">
+      </a>
+      <a href="/meu-perfil-">
+        <img id="linkedin" class="social" src="img/linkedin.jpeg">
+      </a>
+
+
+    </div>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(104, 103, 103);
+}
+
+.links {
+  margin: 2% 0 0 50%;
+  cursor: pointer;
+  color: #e0921d;
+  font-size: 120%;
+}
+
+.links {
+  margin-right: 5%;
+  font-weight: 600;
+}
+
+.links {
+  opacity: 0.9;
+}
+.btn {
+  background-color: rgb(207, 187, 56);
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(169, 166, 160);
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s linear;
+  break-before: 5px;
+  color: rgb(44, 44, 44);
+}
+
+.btn:hover {
+  letter-spacing: 7px;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.parabens {
+  display: flex;
+  margin: 1%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-bottom: 1px;
+  color: #0c0803;
+}
+
+.imgCard {
+  width: 50%;
+  height: 60%;
+  position: relative;
+  margin: 10%;
+}
+
+.container {
+  min-height: 80vh;
+  background: rgb(104, 103, 103);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-bottom: 1px;
+  margin: 3px;
+}
+
+.container form {
+  background: rgba(249, 248, 246, 0.738);
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgb(207, 187, 56);
+  padding: 5px;
+  width: 500px;
+  padding-top: 160px;
+  display: inline-block;
+  flex-direction: column;
+}
+
+.container form .inputBox {
+  margin-top: 20px;
+}
+.container form .inputBox span {
+  display: block;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.container form .inputBox input,
+.container form .inputBox select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #444;
+}
+
+.container form .flexbox {
+  gap: 15px;
+  padding: 10px;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.container form .flexbox .inputBox {
+  flex: 1 1 150px;
+}
+
+.container .card-container {
+  margin-bottom: -150px;
+  position: relative;
+  height: 250px;
+  width: 400px;
+}
+
+.container .card-container .front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, yellow, rgb(216, 125, 20));
+  border-radius: 5px;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.container .card-container .front .image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+}
+
+.container .card-container .front .card-number-box {
+  height: 50px;
+  padding: 30px;
+  font-size: 22px;
+  color: rgb(235, 175, 71);
+}
+
+.lab {
+  height: 20px;
+  border-radius: 8px 8px;
+}
+
+.social {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px 10px;
+  position: relative;
+  float: right;
+}
+
+footer {
+  display: inline-block;
+  width: 25%;
+  margin-top: 1%;
+}
+
+p {
+  font-style: italic;
+}
